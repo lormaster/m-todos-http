@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro del cliente</title>
+
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+    <h1>Registro del cliente</h1>
+
+    <form action="https://httpbin.org/post" method="post" id="formulario">
+
+        <label for="nombreUsuario">
+            Nombre del usuario:
+        </label>
+
+        <input
+            type="text"
+            id="nombreUsuario"
+            name="nombreUsuario"
+            required
+        >
+
+        <br><br>
+
+
+        <label for="correoUsuario">
+            Correo electrónico:
+        </label>
+
+        <input
+            type="email"
+            id="correoUsuario"
+            name="correoUsuario"
+            required
+        >
+
+        <br><br>
+
+
+        <label for="telefonoUsuario">
+            Teléfono:
+        </label>
+
+        <input
+            type="tel"
+            id="telefonoUsuario"
+            name="telefonoUsuario"
+        >
+
+        <br><br>
+
+
+        <label for="contrasenaUsuario">
+            Contraseña:
+        </label>
+
+        <input
+            type="password"
+            id="contrasenaUsuario"
+            name="contrasenaUsuario"
+            required
+            minlength="8"
+        >
+
+        <br><br>
+
+        <button type="submit">
+            Registrar
+        </button>
+    </form>
+
+
+    <script type="module" src="./validacion.js"></script>
+
+</body>
+
+</html>
